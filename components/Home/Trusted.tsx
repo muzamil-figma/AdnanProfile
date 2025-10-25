@@ -1,60 +1,69 @@
 import data from "@/data/trusted.json";
 
+type ShowcaseCardProps = {
+  title: string;
+  image: string;
+  href?: string;
+  className?: string;
+  badge?: string;
+  variant?: string;
+};
+
+type FeatureProps = {
+  title: string;
+  children: React.ReactNode;
+};
+
 export default function HomePage() {
   return (
     <main className="w-full bg-white">
       {/* === Trusted by Industry Leaders Section === */}
       <section className="mx-auto w-full px-4 md:px-6 py-2 md:py-2">
-      <header className="mb-8 md:mb-10 flex flex-col md:flex-row items-start md:items-center justify-between">
-  <h2 className="px-4 sm:px-6 md:px-10 lg:px-20 mt-10 sm:mt-16 md:mt-20 text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
-    <span className="block">{data.trusted.heading.line1}</span>
-    <span className="block">{data.trusted.heading.line2}</span>
-  </h2>
+        <header className="mb-8 md:mb-10 flex flex-col md:flex-row items-start md:items-center justify-between">
+          <h2 className="px-4 sm:px-6 md:px-10 lg:px-20 mt-10 sm:mt-16 md:mt-20 text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+            <span className="block">{data.trusted.heading.line1}</span>
+            <span className="block">{data.trusted.heading.line2}</span>
+          </h2>
 
-  {/* ✅ CTA visible on all screens, styled responsive */}
-  <a
-    href={data.trusted.heading.ctaHref}
-    className="mt-6 md:mt-20 px-4 sm:px-6 md:px-10 lg:px-20 inline-flex items-center text-sm font-medium hover:underline"
-  >
-    {data.trusted.heading.ctaLabel}
-    <svg
-      className="ml-1 h-4 w-4"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M9 18l6-6-6-6"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  </a>
-</header>
+          {/* ✅ CTA visible on all screens, styled responsive */}
+          <a
+            href={data.trusted.heading.ctaHref}
+            className="mt-6 md:mt-20 px-4 sm:px-6 md:px-10 lg:px-20 inline-flex items-center text-sm font-medium hover:underline"
+          >
+            {data.trusted.heading.ctaLabel}
+            <svg
+              className="ml-1 h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 18l6-6-6-6"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+        </header>
 
+        <div className="grid gap-6 px-4 sm:px-8 md:px-10 lg:px-20 md:grid-cols-[1.35fr_1fr] md:grid-rows-2 md:h-[560px]">
+          {/* Left big card */}
+          <ShowcaseCard {...data.trusted.cards[0]} className="md:row-span-2" />
 
-     <div className="grid gap-6 px-4 sm:px-8 md:px-10 lg:px-20 md:grid-cols-[1.35fr_1fr] md:grid-rows-2 md:h-[560px]">
-  {/* Left big card */}
-  <ShowcaseCard
-    {...data.trusted.cards[0]}
-    className="md:row-span-2"
-  />
+          {/* Top-right card */}
+          <ShowcaseCard
+            {...data.trusted.cards[1]}
+            className="md:col-start-2 md:row-start-1"
+          />
 
-  {/* Top-right card */}
-  <ShowcaseCard
-    {...data.trusted.cards[1]}
-    className="md:col-start-2 md:row-start-1"
-  />
-
-  {/* Bottom-right card */}
-  <ShowcaseCard
-    {...data.trusted.cards[2]}
-    className="md:col-start-2 md:row-start-2"
-  />
-</div>
-
+          {/* Bottom-right card */}
+          <ShowcaseCard
+            {...data.trusted.cards[2]}
+            className="md:col-start-2 md:row-start-2"
+          />
+        </div>
       </section>
 
       {/* === Enterprise Security Section === */}
@@ -80,7 +89,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* === Features Section === */}
       <section className="mx-auto px-4 sm:px-6 md:px-10 lg:px-20 max-w-7xl py-12 sm:py-16 md:py-24">
         <div className="grid gap-8 sm:gap-10 md:grid-cols-12">
           <div className="md:col-span-5 text-slate-700 leading-relaxed text-sm sm:text-base">
@@ -99,7 +108,14 @@ export default function HomePage() {
   );
 }
 
-function ShowcaseCard({ title, image, href = "#", className = "", badge, variant }) {
+function ShowcaseCard({
+  title,
+  image,
+  href = "#",
+  className = "",
+  badge,
+  variant,
+}: ShowcaseCardProps) {
   return (
     <a
       href={href}
@@ -117,7 +133,12 @@ function ShowcaseCard({ title, image, href = "#", className = "", badge, variant
           />
         </>
       ) : (
-        <img className="absolute inset-0 h-full w-full object-cover" src={image} alt="" loading="lazy" />
+        <img
+          className="absolute inset-0 h-full w-full object-cover"
+          src={image}
+          alt=""
+          loading="lazy"
+        />
       )}
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent transition-opacity duration-200 group-hover:opacity-100" />
@@ -141,7 +162,7 @@ function ShowcaseCard({ title, image, href = "#", className = "", badge, variant
   );
 }
 
-function Feature({ title, children }) {
+function Feature({ title, children }: FeatureProps) {
   return (
     <div>
       <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
