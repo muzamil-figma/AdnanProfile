@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState, useMemo } from "react";
 import { usePathname } from "next/navigation";
 
-/* ---- Social links (as requested) ---- */
+/* ---- Social links ---- */
 const SOCIALS = {
   whatsapp: "https://wa.me/923477060677",
   facebook: "https://www.facebook.com/share/1GRngm37M3/",
@@ -13,7 +13,7 @@ const SOCIALS = {
     "https://www.instagram.com/adnan.expert.freelancer?igsh=MW85a3doZjJnb293NA==",
 };
 
-/* ---- Inline SVG icons (no extra lib needed) ---- */
+/* ---- Inline SVG icons ---- */
 const IconWhatsApp = (props: any) => (
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden {...props}>
     <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.57.02.29 5.3.31 11.79c.01 2.07.56 4.09 1.61 5.86L0 24l6.52-1.86a11.75 11.75 0 0 0 5.52 1.41h.05c6.49-.02 11.77-5.3 11.79-11.79 0-3.15-1.23-6.11-3.36-8.27ZM12.09 21.3c-1.76 0-3.49-.47-5.01-1.36l-.36-.21-3.87 1.11 1.13-3.77-.23-.39a9.52 9.52 0 0 1-1.42-5.09C2.3 6.52 6.77 2.05 12.06 2.03h.03c5.29 0 9.75 4.43 9.73 9.72-.02 5.29-4.44 9.73-9.73 9.73Zm5.6-7.3c-.31-.16-1.86-.92-2.15-1.03-.29-.11-.5-.16-.71.16-.21.31-.81 1.03-1 1.24-.19.21-.37.24-.68.08-.31-.16-1.31-.48-2.49-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.47.13-.63.14-.14.31-.37.47-.55.16-.19.21-.32.33-.53.11-.21.06-.4-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.63-.52-.55-.71-.55-.19 0-.4-.02-.62-.02-.21 0-.55.08-.84.4-.29.31-1.1 1.08-1.1 2.64s1.13 3.06 1.29 3.27c.16.21 2.23 3.39 5.4 4.76.76.33 1.35.53 1.81.68.76.24 1.46.21 2.01.13.61-.09 1.86-.76 2.13-1.49.26-.73.26-1.35.18-1.49-.08-.13-.29-.21-.61-.37Z" />
@@ -43,7 +43,6 @@ export default function NavBar() {
     const onScroll = () => {
       const y = window.scrollY;
       setScrolled(y > 8);
-      // hide on scroll down, show on scroll up (with small threshold)
       if (Math.abs(y - lastY) > 4) {
         setShowNav(y < lastY || y < 32);
         setLastY(y);
@@ -80,14 +79,12 @@ export default function NavBar() {
         "nav-border",
       ].join(" ")}
     >
-      {/* NAVBAR (fixed height) */}
       <nav className="container-default flex items-center justify-between px-4 sm:px-6 lg:px-40 h-16 lg:h-[72px]">
-        {/* Left: Logo (bigger sizes) */}
         <Link href="/" prefetch className="flex items-center gap-3 h-full" aria-label="Home">
           {isImageLike ? (
             <div className="relative h-full w-[200px] sm:w-[220px] lg:w-[260px]">
               <Image
-                src={String(nav.logoText)} // e.g. "/images/logo.png"
+                src={String(nav.logoText)}
                 alt="UAW logo"
                 fill
                 priority
@@ -102,14 +99,12 @@ export default function NavBar() {
           )}
         </Link>
 
-        {/* Desktop Nav */}
         <div className="hidden sm:flex items-center flex-1 ml-10">
           <ul className="flex items-center gap-8">
             {nav.links?.map((l: any) => (
               <li key={l.href} className="h-16 flex items-center">
                 <Link href={l.href} prefetch className={linkClasses(l.href)}>
                   <span className="px-1">{l.label}</span>
-                  {/* Active underline indicator */}
                   <span
                     className={[
                       "absolute left-0 -bottom-2 h-0.5 w-full rounded",
@@ -124,9 +119,9 @@ export default function NavBar() {
             ))}
           </ul>
 
-          {/* Social icons (replace old CTA) */}
+          {/* External socials (use <a> to fix type error) */}
           <div className="ml-auto flex items-center gap-3">
-            <Link
+            <a
               href={SOCIALS.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
@@ -134,8 +129,8 @@ export default function NavBar() {
               className="p-2 rounded-full bg-white/70 hover:bg-white shadow-sm border border-purple-100 text-green-600 hover:shadow-md transition"
             >
               <IconWhatsApp className="w-5 h-5" />
-            </Link>
-            <Link
+            </a>
+            <a
               href={SOCIALS.facebook}
               target="_blank"
               rel="noopener noreferrer"
@@ -143,8 +138,8 @@ export default function NavBar() {
               className="p-2 rounded-full bg-white/70 hover:bg-white shadow-sm border border-purple-100 text-blue-600 hover:shadow-md transition"
             >
               <IconFacebook className="w-5 h-5" />
-            </Link>
-            <Link
+            </a>
+            <a
               href={SOCIALS.instagram}
               target="_blank"
               rel="noopener noreferrer"
@@ -152,11 +147,10 @@ export default function NavBar() {
               className="p-2 rounded-full bg-white/70 hover:bg-white shadow-sm border border-purple-100 text-pink-600 hover:shadow-md transition"
             >
               <IconInstagram className="w-5 h-5" />
-            </Link>
+            </a>
           </div>
         </div>
 
-        {/* Mobile Burger */}
         <button
           className="sm:hidden p-2 text-2xl"
           onClick={() => setOpen(true)}
@@ -166,7 +160,6 @@ export default function NavBar() {
         </button>
       </nav>
 
-      {/* Backdrop when drawer open */}
       {open && (
         <div
           className="fixed inset-0 bg-black/40 z-40 sm:hidden"
@@ -175,100 +168,101 @@ export default function NavBar() {
       )}
 
       {/* Mobile Drawer */}
-    {/* Mobile Drawer */}
-<div
-  className={`fixed top-0 left-0 h-full w-72 sm:hidden bg-white shadow-2xl z-[60] transform transition-transform duration-300 ${
-    open ? "translate-x-0" : "-translate-x-full"
-  }`}
->
-  <div className="h-16 flex items-center justify-between px-4 border-b border-gray-200 bg-white">
-    <div className="flex items-center gap-3">
-      {isImageLike ? (
-        <div className="relative h-10 w-44">
-          <Image
-            src={String(nav.logoText)}
-            alt="UAW logo"
-            fill
-            priority
-            sizes="176px"
-            className="object-contain"
-          />
+      <div
+        className={`fixed top-0 left-0 h-full w-72 sm:hidden bg-white shadow-2xl z-[60] transform transition-transform duration-300 ${
+          open ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="h-16 flex items-center justify-between px-4 border-b border-gray-200 bg-white">
+          <div className="flex items-center gap-3">
+            {isImageLike ? (
+              <div className="relative h-10 w-44">
+                <Image
+                  src={String(nav.logoText)}
+                  alt="UAW logo"
+                  fill
+                  priority
+                  sizes="176px"
+                  className="object-contain"
+                />
+              </div>
+            ) : (
+              <span className="font-extrabold text-2xl tracking-tight text-gray-900">
+                {nav.logoText || "UAW"}
+              </span>
+            )}
+          </div>
+          <button onClick={() => setOpen(false)} className="text-2xl" aria-label="Close menu">
+            ✕
+          </button>
         </div>
-      ) : (
-        <span className="font-extrabold text-2xl tracking-tight text-gray-900">
-          {nav.logoText || "UAW"}
-        </span>
-      )}
-    </div>
-    <button onClick={() => setOpen(false)} className="text-2xl" aria-label="Close menu">
-      ✕
-    </button>
-  </div>
 
-  <ul className="flex flex-col py-2">
-    {nav.links?.map((l: any) => {
-      const active = typeof window !== "undefined" && (location.pathname === l.href || location.pathname.startsWith(l.href + "/"));
-      return (
-        <li key={l.href}>
-          <Link
-            href={l.href}
-            prefetch
-            onClick={() => setOpen(false)}
-            className={[
-              "block w-full px-6 py-3 text-base whitespace-nowrap transition-colors",
-              active ? "text-purple-700 bg-purple-50" : "text-gray-800",
-              "hover:bg-purple-50 hover:text-purple-700",
-            ].join(" ")}
-          >
-            {l.label}
-          </Link>
-        </li>
-      );
-    })}
+        <ul className="flex flex-col py-2">
+          {nav.links?.map((l: any) => {
+            const active =
+              typeof window !== "undefined" &&
+              (location.pathname === l.href ||
+                location.pathname.startsWith(l.href + "/"));
+            return (
+              <li key={l.href}>
+                <Link
+                  href={l.href}
+                  prefetch
+                  onClick={() => setOpen(false)}
+                  className={[
+                    "block w-full px-6 py-3 text-base whitespace-nowrap transition-colors",
+                    active ? "text-purple-700 bg-purple-50" : "text-gray-800",
+                    "hover:bg-purple-50 hover:text-purple-700",
+                  ].join(" ")}
+                >
+                  {l.label}
+                </Link>
+              </li>
+            );
+          })}
 
-    {/* Mobile Socials (solid white buttons) */}
-    <li className="mt-2 px-6">
-      <div className="flex items-center gap-2">
-        <Link
-          href={SOCIALS.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="WhatsApp"
-          className="flex-1 p-3 rounded-xl bg-white border border-gray-200 text-green-600 shadow-sm hover:shadow-md hover:bg-purple-50 transition flex items-center justify-center gap-2"
-          onClick={() => setOpen(false)}
-        >
-          <IconWhatsApp className="w-5 h-5" />
-          <span className="font-medium">WhatsApp</span>
-        </Link>
+          {/* Mobile Socials */}
+          <li className="mt-2 px-6">
+            <div className="flex items-center gap-2">
+              <a
+                href={SOCIALS.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="flex-1 p-3 rounded-xl bg-white border border-gray-200 text-green-600 shadow-sm hover:shadow-md hover:bg-purple-50 transition flex items-center justify-center gap-2"
+                onClick={() => setOpen(false)}
+              >
+                <IconWhatsApp className="w-5 h-5" />
+                <span className="font-medium">WhatsApp</span>
+              </a>
+            </div>
+            <div className="mt-2 grid grid-cols-2 gap-2">
+              <a
+                href={SOCIALS.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="p-3 rounded-xl bg-white border border-gray-200 text-blue-600 shadow-sm hover:shadow-md hover:bg-purple-50 transition flex items-center justify-center gap-2"
+                onClick={() => setOpen(false)}
+              >
+                <IconFacebook className="w-5 h-5" />
+                <span className="font-medium">Facebook</span>
+              </a>
+              <a
+                href={SOCIALS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="p-3 rounded-xl bg-white border border-gray-200 text-pink-600 shadow-sm hover:shadow-md hover:bg-purple-50 transition flex items-center justify-center gap-2"
+                onClick={() => setOpen(false)}
+              >
+                <IconInstagram className="w-5 h-5" />
+                <span className="font-medium">Instagram</span>
+              </a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div className="mt-2 grid grid-cols-2 gap-2">
-        <Link
-          href={SOCIALS.facebook}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-          className="p-3 rounded-xl bg-white border border-gray-200 text-blue-600 shadow-sm hover:shadow-md hover:bg-purple-50 transition flex items-center justify-center gap-2"
-          onClick={() => setOpen(false)}
-        >
-          <IconFacebook className="w-5 h-5" />
-          <span className="font-medium">Facebook</span>
-        </Link>
-        <Link
-          href={SOCIALS.instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          className="p-3 rounded-xl bg-white border border-gray-200 text-pink-600 shadow-sm hover:shadow-md hover:bg-purple-50 transition flex items-center justify-center gap-2"
-          onClick={() => setOpen(false)}
-        >
-          <IconInstagram className="w-5 h-5" />
-          <span className="font-medium">Instagram</span>
-        </Link>
-      </div>
-    </li>
-  </ul>
-</div>
-
     </header>
   );
 }
