@@ -1,0 +1,26 @@
+{
+  "title": "Privacy Policy",
+  "updated": "2025-08-20",
+  "sections": [
+    {
+      "h": "Overview",
+      "html": "<p>This Privacy Policy explains how UAW Inc. (\"we\",\"our\",\"us\") collects, uses, and safeguards your information when you use our website and services.</p>"
+    },
+    {
+      "h": "Information We Collect",
+      "html": "<ul><li>Account & contact details</li><li>Usage, device, and log data</li><li>Cookies and similar technologies</li></ul>"
+    },
+    {
+      "h": "How We Use Information",
+      "html": "<ul><li>Provide and improve services</li><li>Security, fraud prevention, and diagnostics</li><li>Communications such as product updates</li></ul>"
+    },
+    {
+      "h": "Your Choices",
+      "html": "<p>You may opt out of certain cookies and marketing messages. You can request access, correction, or deletion of your data subject to applicable law.</p>"
+    },
+    {
+      "h": "Contact",
+      "html": "<p>privacy@uaw.example</p>"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "trusted": {
+    "heading": {
+      "line1": "Trusted by",
+      "line2": "industry leaders",
+      "ctaLabel": "More customer stories",
+      "ctaHref": "/customer"
+    },
+    "cards": [
+      {
+        "variant": "stripe",
+        "title": "Headout: Adnan Ali Bhatti led Voice AI that automated 50% of support calls and lifted CSAT",
+        "badge": "headout",
+        "href": "/customer/headout",
+        "image": "/images/tcard1.png"
+      },
+      {
+        "title": "Thompson Creek: React platforms by Adnan scaled service and scheduling, generating $100K in 2 days",
+        "href": "/customer/thompson-creek",
+        "image": "/images/tcard2.png"
+      },
+      {
+        "title": "Medicare Precare: Lead qualification doubled in speed with Kotlin, React Native, and strong operations",
+        "href": "/customer/finn",
+        "image": "/images/tcard3.png"
+      }
+    ]
+  },
+  "enterprise": {
+    "heading": {
+      "line1": "Enterprise",
+      "line2": "grade security"
+    },
+    "subtext": "We guarantee enterprise-grade security with robust measures that protect sensitive data.",
+    "backgroundImage": "/images/bg-s.png",
+    "features": {
+      "paragraph": "Adnan Ali Bhatti brings 5 years as an Android developer (Kotlin, Java), 8 years as a React developer, 4 years as a React Native engineer, 4 years as a graphic designer, and 4 years as a database administrator. He has delivered at Bism Software House (Android), Khan Shab Freelance Place (React), Freelancing Hub (Graphic Design), and Global Freelancing Hub (React Native), where he is also the owner. This background supports private data, reliable uptime, and protected customer experiences.",
+      "list": [
+        {
+          "title": "Data in-House",
+          "text": "Workloads are designed for in-house control. From mobile apps to web platforms, we manage storage, access, and deployment to minimize external exposure and keep ownership clear."
+        },
+        {
+          "title": "Robust Guardrails",
+          "text": "Security reviews, least-privilege roles, secrets management, and encrypted transport are built in. Kotlin and Java backends plus React and React Native clients follow OWASP-aligned practices."
+        },
+        {
+          "title": "Constant Unit Tests",
+          "text": "Automated CI/CD with unit, integration, and UI tests across Android, React, and React Native catches regressions early and keeps releases stable, fast, and secure in production."
+        },
+        {
+          "title": "Expert Implementation",
+          "text": "Delivered by Adnan: Android at Bism Software House; React at Khan Shab Freelance Place; design at Freelancing Hub; React Native and platform leadership at Global Freelancing Hub."
+        }
+      ]
+    }
+  }
+}

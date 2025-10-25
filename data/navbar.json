@@ -1,0 +1,11 @@
+{
+  "logoText": "/images/logo.png",
+  "links": [
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Industries", "href": "/industries" }
+  ],
+ "cta": { "label": "Call us", "targetUrl": "https://wa.me/923477060677" }
+,
+  "ct": { "label": "Features", "targetId": "features" }
+}

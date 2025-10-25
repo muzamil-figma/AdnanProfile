@@ -1,0 +1,182 @@
+[
+  {
+    "id": "android-app",
+    "title": "Android App Development",
+    "subtitle": "Native Android apps crafted in Kotlin/Java with modern architecture and smooth UX.",
+    "startingFrom": 1299,
+    "currency": "USD",
+    "unit": "per project",
+    "features": [
+      "Kotlin/Java, MVVM + Jetpack",
+      "API integration, auth, push notifications",
+      "Play Store readiness & release support",
+      "Performance, crash-free stability focus"
+    ],
+    "delivery": "2–6 weeks (scope-based)",
+    "revisions": "2–4 rounds",
+    "stack": ["Kotlin", "Java", "Jetpack", "Retrofit", "Room"],
+    "reviews": { "rating": 4.9, "count": 120 }
+  },
+  {
+    "id": "react-native",
+    "title": "React Native Apps",
+    "subtitle": "Cross-platform mobile apps for iOS/Android with shared UI and rapid iteration.",
+    "startingFrom": 1490,
+    "currency": "USD",
+    "unit": "per project",
+    "features": [
+      "iOS/Android from one codebase",
+      "Navigation, deep links, push",
+      "REST/GraphQL integrations",
+      "App Store & Play Store handoff"
+    ],
+    "delivery": "3–6 weeks",
+    "revisions": "3 rounds",
+    "stack": ["React Native", "TypeScript", "Expo", "Redux Toolkit"],
+    "reviews": { "rating": 4.8, "count": 95 }
+  },
+  {
+    "id": "react-web",
+    "title": "React.js Frontend",
+    "subtitle": "High-performance SPAs with clean components, accessibility, and test coverage.",
+    "startingFrom": 999,
+    "currency": "USD",
+    "unit": "per project",
+    "features": [
+      "Component libraries, a11y, routing",
+      "State management & caching",
+      "API integration & error handling",
+      "Unit tests & CI configuration"
+    ],
+    "delivery": "1–4 weeks",
+    "revisions": "2 rounds",
+    "stack": ["React", "TypeScript", "Vite", "Zustand", "Jest"],
+    "reviews": { "rating": 4.9, "count": 140 }
+  },
+  {
+    "id": "nextjs-fullstack",
+    "title": "Next.js Full-Stack",
+    "subtitle": "SSR/SSG apps with secure APIs, auth, and production-ready deployments.",
+    "startingFrom": 1599,
+    "currency": "USD",
+    "unit": "per project",
+    "features": [
+      "App Router, server actions",
+      "Auth (JWT/OAuth) & RBAC",
+      "Prisma/ORM with Postgres",
+      "Vercel/AWS deploy & observability"
+    ],
+    "delivery": "2–5 weeks",
+    "revisions": "3 rounds",
+    "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Vercel"],
+    "reviews": { "rating": 4.9, "count": 110 }
+  },
+  {
+    "id": "graphic-design",
+    "title": "Graphic Design Pack",
+    "subtitle": "Brand-ready visuals: logos, social kits, pitch decks, and marketing assets.",
+    "startingFrom": 450,
+    "currency": "USD",
+    "unit": "per pack",
+    "features": [
+      "Logo concepts & guidelines",
+      "Social media kit & templates",
+      "Pitch deck slides",
+      "Print & web exports"
+    ],
+    "delivery": "3–10 days",
+    "revisions": "3–5 rounds",
+    "stack": ["Figma", "Illustrator", "Photoshop"],
+    "reviews": { "rating": 4.7, "count": 80 }
+  },
+  {
+    "id": "3d-character",
+    "title": "3D Character Design",
+    "subtitle": "Stylized or realistic character modeling, texturing, and rig-ready outputs.",
+    "startingFrom": 890,
+    "currency": "USD",
+    "unit": "per character",
+    "features": [
+      "Concept to final mesh",
+      "PBR textures & UV maps",
+      "Basic rig readiness",
+      "Renders & turntable"
+    ],
+    "delivery": "1–3 weeks",
+    "revisions": "2–3 rounds",
+    "stack": ["Blender", "Substance Painter", "ZBrush"],
+    "reviews": { "rating": 4.8, "count": 60 }
+  },
+  {
+    "id": "youtube-automation",
+    "title": "YouTube Automation",
+    "subtitle": "Topic research, scripting, voiceover coordination, editing, and thumbnails.",
+    "startingFrom": 380,
+    "currency": "USD",
+    "unit": "per video",
+    "features": [
+      "SEO topics & scripts",
+      "Pro editing & motion",
+      "Brand thumbnails",
+      "Upload optimization"
+    ],
+    "delivery": "3–7 days / video",
+    "revisions": "2 rounds",
+    "stack": ["Premiere Pro", "After Effects", "Audition"],
+    "reviews": { "rating": 4.6, "count": 70 }
+  },
+  {
+    "id": "node-api",
+    "title": "Node.js API",
+    "subtitle": "Secure REST/GraphQL backends with tests, logging, and performance tuning.",
+    "startingFrom": 1190,
+    "currency": "USD",
+    "unit": "per project",
+    "features": [
+      "Express/Nest, REST/GraphQL",
+      "Auth, rate limits, caching",
+      "ORM & migrations",
+      "Docker + CI pipeline"
+    ],
+    "delivery": "1–4 weeks",
+    "revisions": "2 rounds",
+    "stack": ["Node.js", "NestJS", "TypeScript", "PostgreSQL", "Docker"],
+    "reviews": { "rating": 4.8, "count": 100 }
+  },
+  {
+    "id": "flutter-app",
+    "title": "Flutter App",
+    "subtitle": "Cross-platform mobile apps with native feel, smooth animations, and testing.",
+    "startingFrom": 1290,
+    "currency": "USD",
+    "unit": "per project",
+    "features": [
+      "Material 3, responsive UI",
+      "State management",
+      "API & offline sync",
+      "Store deployment support"
+    ],
+    "delivery": "2–6 weeks",
+    "revisions": "2–3 rounds",
+    "stack": ["Flutter", "Dart", "Riverpod", "Firebase Auth"],
+    "reviews": { "rating": 4.7, "count": 65 }
+  },
+  {
+    "id": "database-admin",
+    "title": "Database Administration",
+    "subtitle": "Schema design, performance tuning, backups, and high-availability operations.",
+    "startingFrom": 690,
+    "currency": "USD",
+    "unit": "per engagement",
+    "features": [
+      "Schema & indexing strategy",
+      "Backup/restore & HA setup",
+      "Query optimization",
+      "Security hardening"
+    ],
+    "delivery": "3–10 days",
+    "revisions": "2 rounds",
+    "stack": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    "reviews": { "rating": 4.8, "count": 75 }
+  }
+]

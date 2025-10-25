@@ -1,0 +1,122 @@
+[
+  {
+    "id": "react-architecture-2025",
+    "title": "React Architecture in 2025: Server Components, Caching, and Clean Boundaries",
+    "summary": "Adnan Ali Bhatti explains a practical React architecture that balances Server Components, client islands, data caching, and testable boundaries for large apps.",
+    "image": "/images/blog1.jpg",
+    "createdAt": "2025-07-10T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>React continues to simplify large front-ends when we draw clean boundaries. I use Server Components for data-heavy views and client islands for interactivity—keeping state local and predictable.</p><h3>What I shipped recently</h3><ul><li>Server-driven lists with streaming.</li><li>Client forms with optimistic updates and retry.</li><li>Accessibility-first components that remain keyboard friendly.</li></ul><h3>Key practices</h3><ol><li>Prefer composition over deep prop drilling.</li><li>Cache per resource, not per page.</li><li>Design for error and empty states first.</li></ol><p>— Adnan Ali Bhatti</p>"
+  },
+  {
+    "id": "node-api-observability",
+    "title": "Node.js APIs: Observability, Backpressure, and Timeouts that Save Incidents",
+    "summary": "Why successful Node backends treat timeouts, retries, and backpressure as first-class features—Adnan’s battle-tested checklist.",
+    "image": "/images/blog2.jpg",
+    "createdAt": "2025-06-22T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Incidents rarely come from one big bug—they come from small timeouts that cascade. I standardize request time limits, retry budgets, and circuit breakers.</p><h3>Checklist</h3><ul><li>Structured logs with correlation IDs.</li><li>Health checks with dependency probes.</li><li>Queue + dead-letter policies for external calls.</li></ul><p>— Adnan Ali Bhatti</p>"
+  },
+  {
+    "id": "nextjs-app-router-playbook",
+    "title": "Next.js App Router Playbook: Server Actions, RSC, and Edge Caching",
+    "summary": "Hard-won lessons adopting the App Router at scale—how to pick what runs on the server, the client, or the edge without surprising users.",
+     "image": "/images/blog.3.png",
+    "createdAt": "2025-06-05T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>App Router unlocks simple data flows and co-location. I treat routes as boundaries: load data on the server, keep client code lean, and prefetch aggressively.</p><h3>Patterns</h3><ul><li>Server Actions for forms that must always succeed exactly once.</li><li>Edge caching for public resources.</li><li>Meaningful loading and error states so the UI never lies.</li></ul>"
+  },
+  {
+    "id": "nestjs-clean-modules",
+    "title": "NestJS: Clean Modules, Guards, and Resilience Patterns",
+    "summary": "Adnan’s module layout for NestJS that scales—DTOs, validation, guards, and graceful degradation when dependencies fail.",
+    "image": "/images/blog4.jpg",
+    "createdAt": "2025-05-25T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>NestJS keeps team speed high when modules are small and explicit. I define crisp boundaries, validation at the edge, and adapters for infra.</p><h3>What works</h3><ul><li>Guards and interceptors for cross-cutting concerns.</li><li>Retry with jitter; idempotency keys.</li><li>Contract tests against external services.</li></ul>"
+  },
+  {
+    "id": "android-modern-kotlin",
+    "title": "Modern Android with Kotlin: Offline-First UX that Feels Instant",
+    "summary": "From coroutines to Room and WorkManager—Adnan’s approach to Android apps that feel fast even when the network doesn’t.",
+     "image": "/images/blog5.jpg",
+    "createdAt": "2025-05-10T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Instant feedback beats instant data. I design flows that let users continue offline, then synchronize without conflicts.</p><h3>Stack</h3><ul><li>Kotlin, Coroutines, Flow.</li><li>Room, WorkManager, Hilt.</li><li>Strict crash budgets and staged rollouts.</li></ul>"
+  },
+  {
+    "id": "flutter-production-guide",
+    "title": "Flutter in Production: Animations, Testing, and Store Readiness",
+    "summary": "Battle-tested tips for Flutter teams shipping cross-platform apps with confidence and polish.",
+    "image": "/images/blog6.jpg",
+    "createdAt": "2025-04-22T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Flutter can ship premium UX quickly—if you keep state simple and write golden tests for the visuals that sell the product.</p><h3>Notes</h3><ul><li>Material 3 with responsive breakpoints.</li><li>Integration tests for critical journeys.</li><li>Release checklists for both stores.</li></ul>"
+  },
+  {
+    "id": "react-native-quality",
+    "title": "React Native Quality: Native Modules, Performance, and Smooth Gestures",
+    "summary": "Adnan’s RN checklist for apps that feel native on both iOS and Android—including device perf traps to avoid.",
+     "image": "/images/blog7.jpg",
+    "createdAt": "2025-04-10T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>The fastest RN apps do less on the JS thread. I offload heavy work to native modules and keep gestures silky with proper batching.</p><h3>Checklist</h3><ul><li>Hermes engine and Fabric where stable.</li><li>Memoize lists; window long feeds.</li><li>Image sizes that match device DPR.</li></ul>"
+  },
+  {
+    "id": "graphic-design-systems",
+    "title": "Graphic Systems that Scale: Tokens, Grids, and Exports",
+    "summary": "How I build design kits teams actually use—fast exports, accessible colors, and layouts that stay on-brand.",
+  "image": "/images/blog8.png",
+    "createdAt": "2025-03-28T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Design systems win when the default outcome is beautiful. I ship tokens, templates, and docs—then get out of the way.</p><ul><li>Color contrast at AA+ by default.</li><li>Export presets for web/print.</li><li>Reusable social + deck kits.</li></ul>"
+  },
+  {
+    "id": "3d-character-pipeline",
+    "title": "3D Character Pipeline: From Concept to Rig-Ready",
+    "summary": "Tools and steps I use to deliver believable characters that render fast and animate cleanly.",
+     "image": "/images/blog9.jpg",
+    "createdAt": "2025-03-12T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Believability beats complexity. I keep topology clean, textures accurate, and lighting honest.</p><h3>Pipeline</h3><ul><li>Blockout → sculpt → retopo.</li><li>UV + PBR in Substance.</li><li>Rig-ready export with checks.</li></ul>"
+  },
+  {
+    "id": "video-editing-ai",
+    "title": "Video Editing + AI: Faster Cuts, Better Stories",
+    "summary": "Where AI helps editors the most today—research, rough cuts, transcripts, thumbnails—without losing taste.",
+    "image": "/images/blog10.jpg",
+    "createdAt": "2025-02-28T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>AI speeds up the boring parts so editors can focus on taste. I use AI for transcripts, beats, and alt cuts—final choices stay human.</p><ul><li>Script assists and versions.</li><li>Auto captions with manual review.</li><li>Thumb ideation with brand rules.</li></ul>"
+  },
+  {
+    "id": "database-foundations",
+    "title": "Database Foundations: Schemas, Indexes, and Backups that Actually Restore",
+    "summary": "Adnan’s pragmatic checklist for Postgres and friends—because a backup that can’t restore is a story no one wants.",
+     "image": "/images/blog11.png",
+    "createdAt": "2025-02-15T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Start with the access patterns and write the schema for them. Test restores weekly and keep a runbook.</p><ul><li>Primary/unique keys that match reality.</li><li>Covering indexes for hot reads.</li><li>Retention + GDPR deletes automated.</li></ul>"
+  },
+  {
+    "id": "devops-habits",
+    "title": "DevOps Habits: Pipelines, Rollbacks, and On-Call Sanity",
+    "summary": "The small habits that keep engineers shipping on Fridays—pipelines that earn trust and rollbacks that are a button, not a prayer.",
+     "image": "/images/blog12.jpg",
+    "createdAt": "2025-01-30T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Healthy pipelines make shipping boring. I keep deploys small, observable, and reversible.</p><ul><li>Blue/green and canaries for risky changes.</li><li>Alert fatigue audits each quarter.</li><li>Chaos-lite drills for new services.</li></ul>"
+  },
+  {
+    "id": "typescript-patterns",
+    "title": "TypeScript Patterns: Safer Apps with Fewer Types",
+    "summary": "Adnan’s favorite patterns to keep TypeScript delightful—just enough types, runtime checks at boundaries, and great DX.",
+    "image": "/images/blog13.jpg",
+    "createdAt": "2025-01-12T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>TypeScript shines when types explain intent—no more. I validate at the edges (zod) and keep domain types tiny.</p><ul><li>Narrow unions for business rules.</li><li>Never export types from infra libs.</li><li>Prefer composition over inheritance.</li></ul>"
+  },
+  {
+    "id": "ui-ux-principles",
+    "title": "UI/UX Principles that Convert: Language, Layout, and Latency",
+    "summary": "Practical UI/UX guardrails Adnan uses to increase conversion without fancy tricks—clear words, obvious layouts, and honest speed.",
+    "image": "/images/blog14.jpg",
+    "createdAt": "2024-12-15T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Design for certainty. Every screen should make the next click obvious. Words first, pixels second.</p><ul><li>Readable copy beats clever copy.</li><li>Consistent spacing rhythm.</li><li>Latency under 100ms for key actions.</li></ul>"
+  },
+  {
+    "id": "web-performance-lighthouse",
+    "title": "Web Performance: Making Lighthouse a Floor, Not a Goal",
+    "summary": "Beyond the score—diagnosing real user performance and keeping it healthy release after release.",
+     "image": "/images/blog15.",
+    "createdAt": "2024-11-28T12:00:00.000Z",
+    "html": "<h2>Overview</h2><p>Lighthouse is the start. I track RUM metrics (LCP, INP, CLS) and budget images/scripts to protect them.</p><ul><li>Critical CSS and font loading strategy.</li><li>Code-split by route and intent.</li><li>Real device profiles for regressions.</li></ul>"
+  }
+]

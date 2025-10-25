@@ -1,0 +1,721 @@
+
+{
+  "heading": "My Skills",
+  "sub": "Technologies & tools I work with — tap any icon to see detailed experience.",
+  "skills": [
+    {
+      "name": "React",
+      "icon": "/icons/react.svg",
+      "experience": [
+        {
+          "heading": "Component Architecture",
+          "bullets": [
+            "Reusable component libraries with props, context, and custom hooks for clear boundaries.",
+            "Smart vs. presentational components to separate data flows from UI concerns.",
+            "Compound components for flexible APIs (tabs, dropdowns, forms).",
+            "Storybook-driven development to document, visualize, and test states quickly."
+          ]
+        },
+        {
+          "heading": "State & Data Flow",
+          "bullets": [
+            "React Query/SWR for caching, revalidation, and network resiliency.",
+            "Redux Toolkit & Context for global state with minimal boilerplate.",
+            "Form state with React Hook Form and Zod-based validation.",
+            "Error boundaries and suspense patterns for robust UX."
+          ]
+        },
+        {
+          "heading": "Performance & UX",
+          "bullets": [
+            "Code-splitting, lazy routes, and dynamic imports to shrink TTI.",
+            "Memoization (memo/useMemo/useCallback) to avoid wasted renders.",
+            "Virtualized lists (react-window/react-virtual) for large datasets.",
+            "Accessibility first: roles, labels, keyboard traps removed."
+          ]
+        },
+        {
+          "heading": "Testing & Quality",
+          "bullets": [
+            "Unit tests with Vitest/Jest; component tests with React Testing Library.",
+            "Visual regression using Storybook + Chromatic workflows.",
+            "ESLint + Prettier + TypeScript for reliable DX & type safety.",
+            "CI gates with coverage thresholds and preview deployments."
+          ]
+        },
+        {
+          "heading": "Ecosystem & Tooling",
+          "bullets": [
+            "Vite/Next/Webpack builds tuned for fast HMR and production bundles.",
+            "Design systems via Tailwind + headless UI primitives.",
+            "Internationalization with react-intl/next-intl and locale routing.",
+            "Analytics and feature flags integrated for data-driven iterations."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Next.js",
+      "icon": "/icons/nextjs.svg",
+      "experience": [
+        {
+          "heading": "Rendering Strategies",
+          "bullets": [
+            "SSR, SSG, ISR, and Client Components balanced per page needs.",
+            "Edge runtime for low-latency reads and middleware auth.",
+            "Static SEO pages prebuilt; dashboards hydrate on client.",
+            "Image Optimization, Fonts, and Metadata APIs for Core Web Vitals."
+          ]
+        },
+        {
+          "heading": "Routing & Data",
+          "bullets": [
+            "App Router with layouts, loading, and error boundaries.",
+            "Server Actions/Route Handlers for secure mutations.",
+            "Caching & revalidation strategies with tags and paths.",
+            "Parallel/Intercepted routes for complex UX flows."
+          ]
+        },
+        {
+          "heading": "Security & Middleware",
+          "bullets": [
+            "Auth.js/JWT sessions, RBAC guards, and CSRF protections.",
+            "Rate limiting and bot filters at the edge using middleware.",
+            "Headers & CSP hardened; HTTPS-only cookies configured.",
+            "Audit logs for admin actions and sensitive routes."
+          ]
+        },
+        {
+          "heading": "Performance & SEO",
+          "bullets": [
+            "RUM metrics tracked (TTFB, LCP, CLS) with alerts.",
+            "Sitemaps, robots, and canonical tags automated.",
+            "Open Graph/Twitter cards for rich sharing previews.",
+            "Prefetch policies tuned to save bandwidth on mobile."
+          ]
+        },
+        {
+          "heading": "Deployments & DX",
+          "bullets": [
+            "Vercel/Netlify deploy previews and environment promotion.",
+            "Prisma/Drizzle migrations in CI with safety checks.",
+            "Feature flags and A/B tests integrated via SDKs.",
+            "Observability: Sentry + OpenTelemetry traces end-to-end."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NestJS",
+      "icon": "/icons/nestjs.svg",
+      "experience": [
+        {
+          "heading": "Architecture",
+          "bullets": [
+            "Domain-driven modules with clear provider boundaries.",
+            "SOLID principles enforced through DI & interfaces.",
+            "Monorepos using Nx for shared libs and types.",
+            "Event-driven patterns with CQRS where suitable."
+          ]
+        },
+        {
+          "heading": "APIs & Data",
+          "bullets": [
+            "REST/GraphQL resolvers with DTO validation via class-validator.",
+            "Prisma/TypeORM integrations with transactions & migrations.",
+            "Pagination, filtering, and cursor-based querying.",
+            "OpenAPI/Swagger docs auto-generated and versioned."
+          ]
+        },
+        {
+          "heading": "Security",
+          "bullets": [
+            "JWT & session strategies, refresh rotation, device revocation.",
+            "Guards, interceptors, and rate limiting per route.",
+            "Helmet, CORS, and input sanitization applied by default.",
+            "RBAC/ABAC authorizers enforced at resolver/controller."
+          ]
+        },
+        {
+          "heading": "Messaging & Jobs",
+          "bullets": [
+            "BullMQ queues for email, webhooks, and long tasks.",
+            "Kafka/NATS streams for microservice communication.",
+            "WebSockets/Gateway for realtime notifications.",
+            "Scheduled tasks with cron and dynamic backoffs."
+          ]
+        },
+        {
+          "heading": "Testing & Ops",
+          "bullets": [
+            "Unit/integration tests with Jest and supertest.",
+            "Config modules for multi-env secrets & toggles.",
+            "Dockerized services with health checks and probes.",
+            "Structured logging (pino) and trace IDs per request."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Java",
+      "icon": "/icons/java.svg",
+      "experience": [
+        {
+          "heading": "Core Language & JVM",
+          "bullets": [
+            "Generics, streams, and functional patterns (Java 8+).",
+            "Memory model, GC tuning, and profiling basics.",
+            "Concurrency with Executors, CompletableFuture, locks.",
+            "Robust error handling with sealed hierarchies."
+          ]
+        },
+        {
+          "heading": "Spring Boot",
+          "bullets": [
+            "RESTful services with validation and exception mappers.",
+            "Data JPA, Flyway/Liquibase migrations, paging queries.",
+            "Security with Spring Security & OAuth2 flows.",
+            "Actuator endpoints and health/readiness probes."
+          ]
+        },
+        {
+          "heading": "Build & Packaging",
+          "bullets": [
+            "Maven/Gradle multi-module projects with BOMs.",
+            "Dockerized jars with layered builds for speed.",
+            "Testcontainers for DB-integrated tests.",
+            "CI pipelines with caching and artifact promotion."
+          ]
+        },
+        {
+          "heading": "Data & Integrations",
+          "bullets": [
+            "JDBC/JPA tuning, connection pools, and batching.",
+            "Message brokers (Kafka/Rabbit) and idempotent consumers.",
+            "gRPC/REST clients with resilience patterns.",
+            "Monitoring via Micrometer + Prometheus/Grafana."
+          ]
+        },
+        {
+          "heading": "Testing",
+          "bullets": [
+            "JUnit5 + Mockito; slice tests for repositories/controllers.",
+            "Contract tests to validate external integrations.",
+            "WireMock for API simulations in CI.",
+            "Load testing with JMeter/k6 where needed."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "icon": "/icons/javascript.svg",
+      "experience": [
+        {
+          "heading": "ESNext Mastery",
+          "bullets": [
+            "Modern syntax: modules, destructuring, rest/spread, classes.",
+            "Iterators, generators, and symbols for advanced APIs.",
+            "Proxies and Reflect for meta-programming utilities.",
+            "Intl APIs for locales, dates, numbers, and lists."
+          ]
+        },
+        {
+          "heading": "Async Patterns",
+          "bullets": [
+            "Promises, async/await, and cancellation with AbortController.",
+            "Web Workers and message passing for heavy tasks.",
+            "Streams API for progressive processing.",
+            "Robust error propagation and retries with backoff."
+          ]
+        },
+        {
+          "heading": "Browser APIs",
+          "bullets": [
+            "Fetch, Cache, and Service Workers for PWAs.",
+            "IntersectionObserver, ResizeObserver for reactive UIs.",
+            "History and URL APIs for SPA routing.",
+            "Clipboard, Fullscreen, and Notifications integration."
+          ]
+        },
+        {
+          "heading": "Tooling",
+          "bullets": [
+            "Vite/Webpack/Rollup configs tuned for DX and perf.",
+            "ESLint/Prettier rulesets for consistent style.",
+            "TypeScript adoption with strict mode.",
+            "Babel transforms for legacy browser support when needed."
+          ]
+        },
+        {
+          "heading": "Testing",
+          "bullets": [
+            "Vitest/Jest for unit tests, happy & edge path coverage.",
+            "Playwright/Cypress for E2E browser testing.",
+            "Mutation testing for critical business logic.",
+            "Snapshots and contract tests for UI & APIs."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "icon": "/icons/python.svg",
+      "experience": [
+        {
+          "heading": "Web & APIs",
+          "bullets": [
+            "FastAPI/Django REST for robust, typed endpoints.",
+            "Pydantic models for validation and serialization.",
+            "Background tasks with Celery/RQ and Redis.",
+            "Auth, rate limits, and pagination patterns."
+          ]
+        },
+        {
+          "heading": "Data & Scripting",
+          "bullets": [
+            "Pandas for ETL; NumPy for vectorized operations.",
+            "Jupyter-based exploration and quick visualization.",
+            "CLI tools with argparse/Typer for automation.",
+            "CSV/JSON/Parquet pipelines with memory awareness."
+          ]
+        },
+        {
+          "heading": "Async & Perf",
+          "bullets": [
+            "asyncio, aiohttp for concurrent IO-bound tasks.",
+            "Multiprocessing for CPU-heavy workloads.",
+            "Profiling with cProfile/line_profiler & tuning hotspots.",
+            "Caching layers with Redis/LRU for speedups."
+          ]
+        },
+        {
+          "heading": "Testing & Packaging",
+          "bullets": [
+            "pytest fixtures, parametrization, and coverage gates.",
+            "Poetry/pip-tools for deterministic environments.",
+            "Type hints (mypy/pyright) with strict configs.",
+            "Docker images with slim base layers."
+          ]
+        },
+        {
+          "heading": "Integrations",
+          "bullets": [
+            "ORMs (SQLAlchemy) and query optimization basics.",
+            "Cloud SDKs for storage, queues, and secrets.",
+            "gRPC/REST clients with retries and circuit breakers.",
+            "Airflow for scheduled jobs and DAG orchestration."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Android Studio",
+      "icon": "/icons/android-studio.svg",
+      "experience": [
+        {
+          "heading": "UI & Components",
+          "bullets": [
+            "Jetpack Compose for declarative, reactive UIs.",
+            "Material components and adaptive layouts.",
+            "Vector assets, theming, and dark mode support.",
+            "Accessibility: talkback labels and touch targets."
+          ]
+        },
+        {
+          "heading": "Architecture",
+          "bullets": [
+            "MVVM with ViewModel, LiveData/Flow, and repositories.",
+            "Navigation component with deep links and safe args.",
+            "Hilt/Dagger for DI and scoped lifecycles.",
+            "WorkManager for background tasks and constraints."
+          ]
+        },
+        {
+          "heading": "Networking & Data",
+          "bullets": [
+            "Retrofit/OkHttp with interceptors and caching.",
+            "Room database with migrations and DAOs.",
+            "Offline-first sync patterns and conflict resolution.",
+            "Firebase Messaging for push notifications."
+          ]
+        },
+        {
+          "heading": "Build & CI",
+          "bullets": [
+            "Gradle tuning, flavors, and build variants.",
+            "Static analysis with Lint, Detekt, and Ktlint.",
+            "Unit/UI tests with JUnit, Espresso, and Robolectric.",
+            "CI pipelines with emulator tests on PRs."
+          ]
+        },
+        {
+          "heading": "Publishing",
+          "bullets": [
+            "App bundles (AAB), Play Console tracks & staged rollouts.",
+            "ProGuard/R8 rules for minify/obfuscation.",
+            "Crash analytics with Firebase Crashlytics.",
+            "In-app updates and review API integrations."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CSS3",
+      "icon": "/icons/css3.svg",
+      "experience": [
+        {
+          "heading": "Layouts",
+          "bullets": [
+            "Flexbox and CSS Grid for complex responsive shells.",
+            "Container queries and modern viewport units.",
+            "Aspect-ratio for media cards and covers.",
+            "Sticky headers, footers, and scroll regions."
+          ]
+        },
+        {
+          "heading": "Responsive Design",
+          "bullets": [
+            "Mobile-first breakpoints with logical properties.",
+            "Fluid type/spacing using clamp() and calc().",
+            "Safe area insets for notches and status bars.",
+            "Print styles and reduced-motion preferences."
+          ]
+        },
+        {
+          "heading": "Animations",
+          "bullets": [
+            "Keyframes, transitions, and timing functions.",
+            "GPU-friendly transforms to avoid layout thrash.",
+            "Scroll-linked animations and parallax effects.",
+            "Accessible motion with prefers-reduced-motion."
+          ]
+        },
+        {
+          "heading": "Architecture",
+          "bullets": [
+            "BEM/utility-first hybrids for scalable CSS.",
+            "CSS variables for themes and dark modes.",
+            "Shadow DOM and style scoping strategies.",
+            "Linting and dead-code elimination with Purge."
+          ]
+        },
+        {
+          "heading": "Cross-Browser",
+          "bullets": [
+            "Progressive enhancement and feature queries.",
+            "Fallbacks for Safari/legacy quirks.",
+            "Testing matrix via BrowserStack/Cypress.",
+            "Accessibility checks alongside visual QA."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "/icons/tailwindcss.svg",
+      "experience": [
+        {
+          "heading": "Design System",
+          "bullets": [
+            "Tokenized colors, spacing, and typography scales.",
+            "Custom plugin utilities for project patterns.",
+            "Composition via @apply and headless primitives.",
+            "Component slots using variant props."
+          ]
+        },
+        {
+          "heading": "Responsive & Variants",
+          "bullets": [
+            "Breakpoint stacks for mobile-first layouts.",
+            "State variants: hover, focus, aria-selected, data-*.",
+            "Dark mode strategies (class & media).",
+            "Print, motion-reduce, and forced-colors support."
+          ]
+        },
+        {
+          "heading": "Theming",
+          "bullets": [
+            "CSS variables and theme extensions per brand.",
+            "Runtime theme switching with local storage.",
+            "Accessible contrast ratios monitored.",
+            "Consistent spacing & radius for cohesion."
+          ]
+        },
+        {
+          "heading": "Performance",
+          "bullets": [
+            "JIT compilation and safelist tuning for purge.",
+            "Minimal DOM classes via extraction and slots.",
+            "Avoiding specificity wars with structure.",
+            "Preflight adjustments to match design tokens."
+          ]
+        },
+        {
+          "heading": "Collab & Docs",
+          "bullets": [
+            "Storybook tokens and usage examples documented.",
+            "Figma ↔️ code parity with regular audits.",
+            "Lint rules to flag anti-pattern utilities.",
+            "Playground sandboxes for onboarding speed."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Laravel",
+      "icon": "/icons/laravel.svg",
+      "experience": [
+        {
+          "heading": "MVC & Eloquent",
+          "bullets": [
+            "Resource controllers and API resources for clean I/O.",
+            "Eloquent relationships, scopes, and accessors.",
+            "Query performance with eager loading and indexes.",
+            "Migrations and seeders for reliable setups."
+          ]
+        },
+        {
+          "heading": "APIs & Auth",
+          "bullets": [
+            "Sanctum/Passport for tokens and SPA auth.",
+            "Validation rules and custom error bags.",
+            "Rate limits per route and user role.",
+            "API versioning and OpenAPI documentation."
+          ]
+        },
+        {
+          "heading": "Queues & Events",
+          "bullets": [
+            "Redis queues for emails, webhooks, and reports.",
+            "Broadcasting with Pusher/WebSockets for realtime.",
+            "Domain events and listeners for decoupling.",
+            "Scheduled commands with retry/backoff policies."
+          ]
+        },
+        {
+          "heading": "Security",
+          "bullets": [
+            "CSRF/XSS protection and input sanitization.",
+            "Signed URLs and temporary file uploads.",
+            "Policies/gates for RBAC and ownership checks.",
+            "Hashing, encryption, and secret rotation."
+          ]
+        },
+        {
+          "heading": "Testing & Deploy",
+          "bullets": [
+            "Pest/PhpUnit feature tests with database refresh.",
+            "Factories/fakers for realistic data setups.",
+            "Envoy/Forge pipelines and zero-downtime deploys.",
+            "Metrics and logs centralized via Monolog."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Node.js",
+      "icon": "/icons/nodejs.svg",
+      "experience": [
+        {
+          "heading": "API Servers",
+          "bullets": [
+            "Express/Fastify with structured routers and schemas.",
+            "Validation with Zod/Joi and typed clients.",
+            "Helmet, CORS, and compression defaults.",
+            "File uploads, streaming, and range requests."
+          ]
+        },
+        {
+          "heading": "Concurrency & IO",
+          "bullets": [
+            "Worker threads and clusters for CPU-bound tasks.",
+            "Streams and backpressure-aware pipelines.",
+            "Queues with BullMQ and scheduled jobs.",
+            "WebSockets/SSE for realtime features."
+          ]
+        },
+        {
+          "heading": "Security",
+          "bullets": [
+            "Dependency scanning and lockfile hygiene.",
+            "dotenv/Secrets managers with rotation.",
+            "JWT/session hardening and cookie flags.",
+            "Audit logs and structured JSON logging."
+          ]
+        },
+        {
+          "heading": "Tooling & DX",
+          "bullets": [
+            "Nx/Turborepo monorepos with shared TS configs.",
+            "E2E tests with supertest and contract mocks.",
+            "ESM/CJS interop and ts-node/register flows.",
+            "NPM workspaces and semantic-release automation."
+          ]
+        },
+        {
+          "heading": "Observability",
+          "bullets": [
+            "Sentry + pino/http for traceable requests.",
+            "Health endpoints and readiness probes.",
+            "Prometheus metrics with histograms.",
+            "Alerting on error rates and latency SLOs."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "icon": "/icons/mongodb.svg",
+      "experience": [
+        {
+          "heading": "Schema Design",
+          "bullets": [
+            "Embedding vs. referencing trade-offs documented.",
+            "Time-series and audit trails modeled efficiently.",
+            "Sharding keys chosen for balanced distribution.",
+            "Versioned documents and migration strategies."
+          ]
+        },
+        {
+          "heading": "Query & Aggregation",
+          "bullets": [
+            "Aggregation pipelines for analytics and reports.",
+            "Change streams for realtime subscriptions.",
+            "Partial and sparse indexes to cut storage.",
+            "Explain plans to remove collection scans."
+          ]
+        },
+        {
+          "heading": "Performance",
+          "bullets": [
+            "Compound indexes and TTL where appropriate.",
+            "Write concerns tuned for durability vs. speed.",
+            "Bulk writes and transactions when needed.",
+            "Profiling with serverStatus and FTDC."
+          ]
+        },
+        {
+          "heading": "Ops & Security",
+          "bullets": [
+            "Replica sets with arbiter-free quorum.",
+            "Role-based access and network isolation.",
+            "Backups with point-in-time recovery.",
+            "Auditing of admin actions and schema changes."
+          ]
+        },
+        {
+          "heading": "ODM/Integration",
+          "bullets": [
+            "Mongoose models with strict schemas.",
+            "Prisma Mongo connector for typed access.",
+            "Paginated APIs with cursors and projections.",
+            "Validation at both app and database layers."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Firebase",
+      "icon": "/icons/firebase.svg",
+      "experience": [
+        {
+          "heading": "Auth & Security",
+          "bullets": [
+            "Email/password, OAuth providers, and custom tokens.",
+            "Multi-tenancy, roles, and claims-based rules.",
+            "Session persistence across web/app contexts.",
+            "Device revocation and anomaly detection."
+          ]
+        },
+        {
+          "heading": "Firestore & RTDB",
+          "bullets": [
+            "Subcollections, indexes, and batched writes.",
+            "Offline persistence and conflict resolution.",
+            "Realtime listeners optimized for cost.",
+            "Export/import for backups and migrations."
+          ]
+        },
+        {
+          "heading": "Cloud Functions",
+          "bullets": [
+            "HTTP triggers, pub/sub, and scheduled jobs.",
+            "Cold start mitigation and memory tuning.",
+            "Idempotent handlers and retries with DLQs.",
+            "Secrets & environment configs per project."
+          ]
+        },
+        {
+          "heading": "Hosting & Storage",
+          "bullets": [
+            "CDN-backed hosting with redirects and headers.",
+            "Resumable uploads, rules, and signed URLs.",
+            "Image resizing and metadata processing.",
+            "Traffic splitting across channels."
+          ]
+        },
+        {
+          "heading": "Analytics & Cost",
+          "bullets": [
+            "GA4 events and BigQuery exports for insights.",
+            "Usage caps, alerts, and sparse listeners.",
+            "Emulators for local dev and CI safety.",
+            "Pricing audits to avoid noisy hot paths."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MySQL",
+      "icon": "/icons/mysql.svg",
+      "experience": [
+        {
+          "heading": "Schema & Modeling",
+          "bullets": [
+            "Normalized schemas with pragmatic denormalization.",
+            "Composite keys and surrogate IDs where needed.",
+            "Character sets/collations picked per locale.",
+            "Temporal tables and audit trails designed."
+          ]
+        },
+        {
+          "heading": "Query Performance",
+          "bullets": [
+            "EXPLAIN and slow query logs triaged weekly.",
+            "Covering indexes and proper selectivity.",
+            "Batching inserts/updates to reduce locks.",
+            "Prepared statements and connection pools."
+          ]
+        },
+        {
+          "heading": "Reliability",
+          "bullets": [
+            "Backups with PITR; automated restores tested.",
+            "Replication lag monitoring and failover plans.",
+            "Transaction isolation tuned per workload.",
+            "Checksum and integrity checks scheduled."
+          ]
+        },
+        {
+          "heading": "Migrations & ORM",
+          "bullets": [
+            "Safe online migrations with pt-osc/gh-ost when needed.",
+            "Prisma/TypeORM schemas aligned with DB source of truth.",
+            "Seed scripts for deterministic environments.",
+            "Rollback strategies documented and rehearsed."
+          ]
+        },
+        {
+          "heading": "Ops & Monitoring",
+          "bullets": [
+            "Metrics (QPS, tmp tables, buffer pool) graphed.",
+            "Alerts on slow queries and deadlocks.",
+            "Resource limits and connection caps tuned.",
+            "Security: least-privilege users and SSL enforced."
+          ]
+        }
+      ]
+    }
+  ]
+}

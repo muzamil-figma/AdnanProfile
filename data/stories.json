@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "id": "headout",
+      "company": "Headout",
+      "title": "Customer Support: Headout automates 50% of calls with Voice AI led by Adnan Ali Bhatti",
+      "category": "Android",
+      "employees": "200 - 500",
+      "image": "/images/story1.png",
+      "story": "Client quote\n\"Adnan did not just ship features; he rebuilt our Android call-handling flows around reliability. Within weeks, abandonment dropped and customers consistently reached the right agent.\"\n\nAdnan on the engagement\n\"The objective was simple: cut average handle time without cutting trust. I mapped the full Android in-app call experience, introduced a Kotlin-first modular architecture, and instrumented every step to prove impact.\"\n\nProject scope\n1) Android call orchestration using Kotlin, Coroutines, Flow.\n2) Voice AI handoff and fallbacks for low-connectivity scenarios.\n3) Analytics, tracing, and crash-free stability improvements.\n\nArchitecture decisions\n- MVVM with single-source-of-truth state.\n- Dependency injection with Hilt for testability.\n- Offline-first queue so voicemails and call intents never vanish.\n\nWhat changed for users\n- Faster connection to the right queue and clearer status feedback.\n- Smart retries and silent fallbacks when network dropped.\n- Fewer taps to reach the right itinerary or support article.\n\nQuality and testing\n- Unit and instrumentation tests covered routing edge cases.\n- Strict linting, static analysis, and performance budgets.\n- Gradual rollout with staged Play tracks and metrics gates.\n\nResults\n- 50% of routine calls resolved without human escalation.\n- Meaningful lift in CSAT and shorter time-to-resolution.\n- Crash-free users ticked up, improving Play rating momentum.\n\nClient testimonial\n\"We appreciated how Adnan explained tradeoffs in plain language and defended user experience. The Android app feels lighter, faster, and more trustworthy.\"\n\nAdnan’s closing note\n\"Reliability is a product feature. My job was to make the reliable path the default path. The code proves it with metrics, not adjectives.\""
+    },
+    {
+      "id": "thompson-creek",
+      "company": "Thompson Creek",
+      "title": "Scheduling at scale: React frontend accelerated bookings and added 100K in 2 days",
+      "category": "React",
+      "employees": "300",
+      "image": "/images/story2.png",
+      "story": "Client quote\n\"Adnan turned our scheduling UI from a bottleneck into a growth lever. Customers complete flows faster and reps have fewer manual fixes.\"\n\nAdnan on the engagement\n\"I focused on reducing cognitive load. Every field, error message, and state transition was measured against completion time. If it did not help a user book faster, it did not ship.\"\n\nProject scope\n1) React SPA for customer and internal booking.\n2) Real-time availability and hold placement.\n3) A11y-first components and crisp empty states.\n\nFrontend approach\n- React with TypeScript and Vite for rapid builds.\n- Zustand for minimal, predictable state.\n- Suspense-like patterns for loading islands.\n\nData and reliability\n- Graceful retries and optimistic UI that never lies.\n- Analytics hooks to capture abandon reasons.\n\nDX and quality\n- Storybook for shared components.\n- Jest and Testing Library for intent-level tests.\n\nResults\n- 100K added over a 48-hour promo due to faster conversion.\n- Lower dropoff on mobile during peak hours.\n\nClient testimonial\n\"We asked for speed; Adnan delivered clarity and speed. The codebase is a joy to extend.\"\n\nAdnan’s closing note\n\"Speed is not just milliseconds. It is removing doubt so the next click is obvious.\""
+    },
+    {
+      "id": "health-tech",
+      "company": "Health Tech Company",
+      "title": "Triage without friction: routing patients to the right care with Android and RN surfaces",
+      "category": "React Native",
+      "employees": "-",
+      "image": "/images/story3.png",
+      "story": "Client quote\n\"Compliance is table stakes for us. Adnan kept us compliant and still shipped a patient flow that feels modern and human.\"\n\nAdnan on the engagement\n\"Healthcare is where failure states matter most. I designed flows that recover gracefully: if connectivity fails or data is late, the patient still knows what to do next.\"\n\nScope\n1) React Native intake app for iOS and Android.\n2) Android native modules for secure storage and biometrics.\n3) HIPAA-aligned data handling and audit trails.\n\nDesign principles\n- Clear language and progressive disclosure.\n- Short forms that adapt to answers.\n- Explicit consent and visible privacy anchors.\n\nTech and quality\n- React Native with TypeScript and RTK Query.\n- E2E flows with Detox and mocked endpoints.\n\nOutcomes\n- Fewer support tickets about account setup.\n- Higher completion rates for intake.\n\nClient testimonial\n\"He never traded safety for speed. Adnan found ways to do both.\"\n\nAdnan’s closing note\n\"In regulated spaces, empathy and discipline ship together.\""
+    },
+    {
+      "id": "clipboard-health",
+      "company": "Clipboard Health",
+      "title": "Design that sells itself: a reusable graphic system for brand and growth",
+      "category": "Graphic Design",
+      "employees": "100-500 employees",
+      "image": "/images/story4.png",
+      "story": "Client quote\n\"Every asset finally looks like it belongs to the same brand. Our team can ship marketing in hours, not days.\"\n\nAdnan on the engagement\n\"I created a living system, not just files. The goal was to make good design the default outcome for everyone who touches it.\"\n\nScope\n1) Logo refinements and color system with accessibility.\n2) Social and ads templates in Figma.\n3) Pitch deck slides mapped to common narratives.\n\nPractices\n- Token-based styles for colors and type.\n- Export presets for web and print.\n\nOutcomes\n- Faster content shipping with consistency.\n- Better engagement on social and ads.\n\nClient testimonial\n\"Adnan taught our team how to fish. We still use the system daily.\"\n\nAdnan’s closing note\n\"Great design is a system that keeps shipping even when I am not in the room.\""
+    },
+    {
+      "id": "finn",
+      "company": "FINN",
+      "title": "3D that persuades: realistic car visuals for subscription flows",
+      "category": "3D",
+      "employees": "200-500 employees",
+      "image": "/images/story5.png",
+      "story": "Client quote\n\"The 3D renders look like you could touch the car. It raised trust and reduced returns from expectation gaps.\"\n\nAdnan on the engagement\n\"I wanted customers to feel the material and lighting before they ever drove the car. The visuals needed to be beautiful and honest.\"\n\nScope\n1) 3D modeling and texturing for hero vehicles.\n2) PBR pipeline with calibrated HDRIs.\n3) Render sets for web and motion.\n\nWorkflow\n- Blender with geometry nodes for variants.\n- Substance Painter for materials.\n\nOutcomes\n- Higher conversion on detail pages.\n- Fewer support tickets about color mismatch.\n\nClient testimonial\n\"Adnan’s craft elevated the entire product narrative.\"\n\nAdnan’s closing note\n\"Realism is a trust contract. I keep it by being accurate, not flashy.\""
+    },
+    {
+      "id": "twice-the-speed",
+      "company": "Twice the speed",
+      "title": "From lead to meeting: Node.js and React flows that double Medicare precare qualification",
+      "category": "Node.js",
+      "employees": "0 - 50 employees",
+      "image": "/images/story6.png",
+      "story": "Client quote\n\"We went from a tangle of forms to a crisp flow that qualifies leads in minutes. The pipeline is observable and resilient.\"\n\nAdnan on the engagement\n\"I cut the flow into milestones we could test in production, then I automated the boring parts so ops could focus on high-signal cases.\"\n\nScope\n1) Node.js API with NestJS, PostgreSQL, and Prisma.\n2) React qualification UI with server-driven steps.\n3) Queue and retries for vendor calls.\n\nReliability\n- Circuit breakers and dead-letter queues.\n- Structured logging for real debugging.\n\nOutcomes\n- Qualification speed doubled on average.\n- Ops had better triage with fewer errors.\n\nClient testimonial\n\"Adnan brought structure and calm to what used to be chaos.\"\n\nAdnan’s closing note\n\"Throughput without visibility is luck. We replaced luck with telemetry.\""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+"heading": "FAQs",
+"sub": "Your most frequent questions answered.",
+"items": [
+{
+"q": "About the developer?",
+"a": "My name is Adnan Ali Bhatti, Senior Softwear Developer. I lead architecture, mentor engineers, and translate business goals into reliable, scalable software your team can trust."
+},
+{
+"q": "Experience and background?",
+"a": "I bring 7 year experince delivering production-grade web and mobile apps across fintech, e-commerce, and SaaS—owning full lifecycle from discovery to deployment."
+},
+{
+"q": "Pricing and packages?",
+"a": "We propose a suitable price for your project and demand—clear milestones, no hidden fees, and flexible engagement (fixed-price, monthly retainer, or time-and-materials) so you pay only for real value."
+},
+{
+"q": "Tech stack used?",
+"a": "Modern, proven tools: React/Next.js, Node.js/NestJS, Python/Django, PostgreSQL, MongoDB, Docker, and cloud on AWS/GCP/Azure—picked to match your scale, security, and budget."
+},
+{
+"q": "Project timeline?",
+"a": "Typical MVPs land in 4–8 weeks with weekly demos. We timebox sprints, lock scopes, and de-risk early with proofs-of-concept to keep delivery predictable."
+},
+{
+"q": "Communication and updates?",
+"a": "You get a single point of contact, daily Slack updates, a weekly progress report, and a live roadmap so you always know status, risks, and next steps."
+},
+{
+"q": "Code quality and testing?",
+"a": "We follow clean architecture, reviews, automated CI/CD, unit/integration tests, and performance budgets—so features ship fast without sacrificing stability."
+},
+{
+"q": "Data privacy compliance?",
+"a": "We implement GDPR-aligned practices, role-based access, encryption in transit/at rest, audit logs, and signed DPAs to keep your data private and compliant."
+},
+{
+"q": "Post-launch support?",
+"a": "Production monitoring, on-call support, bug SLAs, optimization sprints, and knowledge handover ensure your product stays fast, secure, and easy to evolve."
+},
+{
+"q": "Why choose us?",
+"a": "Reliability, transparent pricing, and partner-level collaboration—backed by measurable outcomes: faster releases, fewer defects, and software your customers love."
+}
+]
+}
