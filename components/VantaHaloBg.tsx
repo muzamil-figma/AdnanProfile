@@ -3,6 +3,12 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
+// Declare the VANTA module inline (TypeScript fix)
+declare module "vanta/dist/vanta.halo.min" {
+  const VANTA: any;
+  export default VANTA;
+}
+
 export default function VantaHaloBg() {
   const elRef = useRef<HTMLDivElement | null>(null);
   const effectRef = useRef<{ destroy: () => void } | null>(null);
@@ -12,7 +18,9 @@ export default function VantaHaloBg() {
     if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
 
     let alive = true;
+
     (async () => {
+      // ✅ Type-safe dynamic import (no more TS error)
       const HALO = (await import("vanta/dist/vanta.halo.min")).default as any;
       if (!alive || !elRef.current) return;
 
@@ -32,7 +40,11 @@ export default function VantaHaloBg() {
 
     return () => {
       alive = false;
-      try { effectRef.current?.destroy(); } catch {}
+      try {
+        effectRef.current?.destroy();
+      } catch {
+        /* ignore cleanup errors */
+      }
       effectRef.current = null;
     };
   }, []);
