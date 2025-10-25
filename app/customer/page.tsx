@@ -30,8 +30,14 @@ export default function CustomerPage() {
         <section className="mx-auto w-full pb-16">
           <div className="grid gap-6 md:grid-cols-[1.35fr_1fr] md:grid-rows-2 md:h-[560px]">
             <ShowcaseCard {...cards[0]} className="md:row-span-2" />
-            <ShowcaseCard {...cards[1]} className="md:col-start-2 md:row-start-1" />
-            <ShowcaseCard {...cards[2]} className="md:col-start-2 md:row-start-2" />
+            <ShowcaseCard
+              {...cards[1]}
+              className="md:col-start-2 md:row-start-1"
+            />
+            <ShowcaseCard
+              {...cards[2]}
+              className="md:col-start-2 md:row-start-2"
+            />
           </div>
         </section>
 
@@ -50,12 +56,18 @@ export default function CustomerPage() {
               </thead>
               <tbody>
                 {stories.cases.map((c) => (
-                  <tr key={c.id} className="border-b text-sm hover:bg-gray-50">
+                  <tr
+                    key={c.id}
+                    className="border-b text-sm hover:bg-gray-50"
+                  >
                     <td className="py-3 px-2">{c.company}</td>
                     <td className="py-3 px-2">{c.category}</td>
                     <td className="py-3 px-2">{c.employees}</td>
                     <td className="py-3 px-2 text-blue-600 font-medium">
-                      <a href={`/customer/${c.id}`} className="hover:underline">
+                      <a
+                        href={`/customer/${c.id}`}
+                        className="hover:underline"
+                      >
                         Read Story &gt;
                       </a>
                     </td>
@@ -74,7 +86,24 @@ export default function CustomerPage() {
   );
 }
 
-function ShowcaseCard({ title, image, href = "#", className = "", badge, variant }) {
+/* ✅ FIXED: added proper TypeScript typing so 'badge' and 'variant' are optional */
+type ShowcaseCardProps = {
+  title: string;
+  image: string;
+  href?: string;
+  className?: string;
+  badge?: string;
+  variant?: string;
+};
+
+function ShowcaseCard({
+  title,
+  image,
+  href = "#",
+  className = "",
+  badge,
+  variant,
+}: ShowcaseCardProps) {
   return (
     <a
       href={href}
